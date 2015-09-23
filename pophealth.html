@@ -8,13 +8,20 @@
     <h1>JHU DaSH - Population Health: How does the economy affect wellness?</h1>
     <p><strong>Do economic conditions/events affect the number of hospital (ER and inpatient) visits?</strong></p>
     <h2>Do economic conditions/events affect the number of hospital (ER and inpatient) visits?</h2>
-    <h2>Is there an association between unemployment rate and hospital visits?</h2>
+    {{> unemploymentCalifornia}}
     <h2>How did the Great Recession impact hospital visits?</h2>
     <h2>Do we seen an impact of the Affordable Care Act on hospital visits?</h2>
     <h2>Are these associations/effects different by payor type (Medicare, Medicaid, Private, Indigent Care)?</h2>
     {{> migration}}
   </div>
 </body>
+
+<template name="unemploymentCalifornia">
+  <div id="unemployment-california">
+    <h2>Is there an association between unemployment rate and hospital visits?</h2>
+    <p>Comparing Outpatient Hospital Visits With Unemployment Rate in California between 2000-2014</p>
+  </div>
+</template>
 
 <template name="migration">
   <div id="delta-migration">
