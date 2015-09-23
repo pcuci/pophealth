@@ -7,7 +7,7 @@
     <img id="jhu-logo" src="https://lh4.googleusercontent.com/-vt0qVScbeaE/AAAAAAAAAAI/AAAAAAAAAAA/hEkf0HxuLCs/s0-c-k-no-ns/photo.jpg" />
     <h1>JHU DaSH - Population Health: How does the economy affect wellness?</h1>
     <p><strong>Do economic conditions/events affect the number of hospital (ER and inpatient) visits?</strong></p>
-    <h2>Do economic conditions/events affect the number of hospital (ER and inpatient) visits?</h2>
+    {{> unemploymentInsurance}}
     {{> unemploymentCalifornia}}
     <h2>How did the Great Recession impact hospital visits?</h2>
     <h2>Do we seen an impact of the Affordable Care Act on hospital visits?</h2>
@@ -15,6 +15,13 @@
     {{> migration}}
   </div>
 </body>
+
+<template name="unemploymentInsurance">
+  <div id="unemployment-insurance">
+    <h2>Do economic conditions/events affect the number of hospital (ER and inpatient) visits?</h2>
+    <p>Maps of unemployment and visits under different insurance programs</p>
+  </div>
+</template>
 
 <template name="unemploymentCalifornia">
   <div id="unemployment-california">
